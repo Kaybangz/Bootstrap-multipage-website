@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="serviceRouteStyle.css" />
+
+    <title>WeMuuve</title>
+  </head>
+  <body>
+    <!--**********HEADER SECTION STARTS**********-->
+    <header>
+      <div class="menu">
+        <div class="menu__container">
+          <nav>
+            <div class="menu__icons">
+              <ion-icon class="hamburger" name="menu" size="large"></ion-icon>
+              <ion-icon class="close" name="close" size="large"></ion-icon>
+            </div>
+            <a href="/index.html" class="logo">
+              <p>we<span class="logo__add">Muuve</span></p>
+            </a>
+            <ul class="navlist">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="../about.html">About Us</a></li>
+              <li>
+                <a href="../services.html" class="services__nav"
+                  >Services<ion-icon
+                    class="service__icon"
+                    name="arrow-dropdown"
+                  ></ion-icon
+                ></a>
+                <ul class="sub__menu">
+                  <li><a href="homeMove.html">Home moves</a></li>
+                  <li><a href="officeMove.html">Office/Business moves</a></li>
+                  <li><a href="schoolMove.html">Student moves</a></li>
+                  <li><a href="secureStorage.html">Secure Storage</a></li>
+                  <li><a href="storeDelivery.html">Store delivery</a></li>
+                  <li><a href="cleaningService.html">Cleaning service</a></li>
+                </ul>
+              </li>
+              <li><a href="../gallery.html">Gallery</a></li>
+              <div class="call__action">
+                <li>
+                  <a href="tel:+2348179133592"
+                    ><ion-icon class="phone" name="call"></ion-icon>Call us</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--**********HEADER SECTION ENDS**********-->
+
+    <!--**********SERVICE ITEM STARTS*****************-->
+    <section id="service__item">
+      <div class="service_item_container">
+        <div class="service_bg_img">
+          <img
+            src="../images/png/school_move.png"
+          />
+        </div>
+
+        <div class="service_item_title">
+          <h2>Student moves</h2>
+        </div>
+
+        
+        <div class="service_item_text">
+          <div class="text_item_1">
+            <h3>Student Moves</h3>
+            <p>
+                Whether you’re moving into student halls, new student digs or returning back home between semesters, the problem of shifting your belongings from A to B is a constant source of concern. But it needn’t be with weMuuve's student move service. We’re here to make the process as effortless as possible.
+            </p>
+          </div>
+
+          <div class="text_item_2">
+            <h3>Moving</h3>
+            <p>
+                An experienced member of the weMuuve Student team will collect your belongings, then deliver it to and fro any university across Nigeria. If you need packing supplies, we can deliver these to your door. Packmyload Student boxes are stronger than standard cardboard boxes and are provided to you at a low cost.
+            </p>
+          </div>
+
+          <div class="text_item_3">
+            <h3>Small And Large Student Removals</h3>
+            <p>
+                No matter what you need to send, Uni Baggage can help. We offer student removals for items from 1kg up to 30kg and you can book as many items as you like with us.
+            </p>
+          </div>
+
+          <div class="text_item_4">
+            <h3>Labels!
+            </h3>
+            <p>
+                Once you've booked, we give you the labels - all that you have to do is put them on the bags, suitcases or boxes and you're away. After that, we’ll collect your luggage and deliver it to where it needs to go. Sounds simple and it is.
+            </p>
+          </div>
+        </div>
+        <!--**********MODAL STARTS**************-->
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          id="book_us_btn"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Book us
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Enter details
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Name</label>
+                    <input type="email" class="form-control" id="inputEmail4" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" scrollable class="form-select">
+                      <option selected>Lagos</option>
+                      <option>Edo</option>
+                      <option>Abuja</option>
+                      <option>Enugu</option>
+                      <option>Calabar</option>
+                      <option>Imo</option>
+                      <option>Ogun</option>
+                      <option>Anambra</option>
+                      <option>Benue</option>
+                      <option>Kaduna</option>
+                      <option>Kano</option>
+                      <option>Port-harcourt</option>
+                      <option>Abia</option>
+                      <option>Adamawa</option>
+                      <option>Awka Ibom</option>
+                      <option>Bauchi</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label"
+                      >Pickup Address</label
+                    >
+                    <input type="text" class="form-control" id="inputAddress" />
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label"
+                      >Dropoff Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress2"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="gridCheck"
+                      />
+                      <label class="form-check-label" for="gridCheck">
+                        Agree to terms and conditions
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--**********MODAL ENDS**************-->
+
+      </div>
+    </section>
+    <!--***********************SERVICE ITEM ENDS*******************************-->
+
+    
+
+    <!--**********FOOTER SECTION STARTS**********-->
+    <section id="footer">
+      <main class="footer__container">
+        <div class="footer_contact_section">
+          <h4>Contact</h4>
+          <h5><ion-icon name="pin"></ion-icon> 034 Somewhere in Nigeria.</h5>
+          <h5><ion-icon name="pin"></ion-icon> 98 Somewhere in Nigeria.</h5>
+          <h5><ion-icon name="mail"></ion-icon>wemuuve@gmail.com</h5>
+          <h5><ion-icon name="phone-portrait"></ion-icon>+2347033309021</h5>
+        </div>
+
+        <div class="footer_service_section">
+          <h4>Our services</h4>
+          <p><a href="homeMove.html">Home moves</a></p>
+          <p><a href="officeMove.html">Office moves</a></p>
+          <p><a href="schoolMove.html">Student moves</a></p>
+          <p><a href="secureStorage.html">Secure storage</a></p>
+          <p><a href="storeDelivery.html">Store delivery</a></p>
+          <p><a href="cleaningService.html">Cleaning services</a></p>
+        </div>
+
+        <div class="subscription__section">
+          <h4>Subscribe</h4>
+          <p>
+            Want to be notified when we have tips or offers. Just sign up and
+            we'll send you a notification by email.
+          </p>
+          <div class="subscription__form">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <p class="copyright__text">&copy;Built by Kaybangz</p>
+    </section>
+    <!--**********FOOTER SECTION ENDS************-->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../js/main.js" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

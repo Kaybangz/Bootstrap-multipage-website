@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary_color: #2c3b5a;
+  --secondary_color: #2e5f9e;
+  --backup_color: #11335f;
+  --border_color: #46c4fe;
+  --container_width: 90%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1500;
+  background: var(--backup_color);
+}
+
+.menu__container {
+  width: var(--container_width);
+  margin: 0 auto;
+}
+
+.menu__icons {
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2000;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+}
+
+.logo {
+  width: 3rem;
+  margin-top: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+  margin-left: 5rem;
+}
+
+.logo p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  font-style: italic;
+  color: var(--border_color);
+}
+
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+
+.navlist li {
+  line-height: 4rem;
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+.sub__menu {
+  width: 28rem;
+  display: block;
+  position: absolute;
+  border-top: 2px solid var(--secondary_color);
+  background-color: var(--primary_color);
+  z-index: 100;
+  top: 8rem;
+  transition: all 350ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub__menu::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  border: 1.2rem solid transparent;
+  border-bottom-color: var(--secondary_color);
+}
+
+.sub__menu li {
+  line-height: 5rem;
+}
+
+.navlist a {
+  display: block;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 650ms;
+  color: white;
+}
+
+.navlist li a:hover {
+  color: var(--border_color);
+}
+
+.navlist li:hover > .sub__menu {
+  top: 5rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.call__action {
+  margin: auto 0 auto auto;
+  display: inline-block;
+}
+
+.call__action li a {
+  color: white;
+  background: var(--border_color);
+  border-radius: 20px;
+  padding: 0.8rem;
+  line-height: initial;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 650ms;
+}
+
+.phone {
+  margin-right: .1rem;
+}
+
+.call__action li a:hover {
+  color: white;
+  background: var(--secondary_color);
+}
+
+#aboutUs {
+  width: 100%;
+  background: aliceblue;
+}
+
+.aboutUs__container {
+  width: var(--container_width);
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.aboutUs__container h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--secondary_color);
+  margin-left: 2.5rem;
+  display: flex;
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  letter-spacing: 0.8rem;
+}
+
+.aboutUs__container h2::after {
+  content: "";
+  position: absolute;
+  top: 6.5rem;
+  left: -1rem;
+  width: 17rem;
+  height: 6.5rem;
+  border: 2px solid var(--primary_color);
+  border-right: transparent;
+}
+
+.aboutUs_item_1,
+.aboutUs_item_2,
+.aboutUs_item_3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aboutUs_item_1,
+.aboutUs_item_2 {
+  margin-bottom: 9rem;
+}
+
+.aboutUs_item_2 {
+  flex-direction: row-reverse;
+}
+
+.aboutUs_item_1_photo,
+.aboutUs_item_2_photo,
+.aboutUs_item_3_photo {
+  width: 40rem;
+  height: 32rem;
+  flex-basis: 40%;
+}
+
+.aboutUs_item_1_photo img,
+.aboutUs_item_2_photo img,
+.aboutUs_item_3_photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.aboutUs_item_1_text,
+.aboutUs_item_2_text,
+.aboutUs_item_3_text {
+  flex-basis: 40%;
+  flex-wrap: wrap;
+}
+
+.aboutUs_item_1_text h3,
+.aboutUs_item_2_text h3,
+.aboutUs_item_3_text h3 {
+  font-size: 3.5rem;
+  margin-bottom: 0.7rem;
+  color: var(--secondary_color);
+  font-weight: bolder;
+}
+
+.aboutUs_item_2_text h3 {
+  text-align: right;
+}
+
+.aboutUs_item_1_text p,
+.aboutUs_item_2_text p,
+.aboutUs_item_3_text p {
+  font-size: 1.8rem;
+  color: var(--backup_color);
+  line-height: 2.9rem;
+  text-align: justify;
+}
+
+#footer {
+  width: 100%;
+  background: var(--secondary_color);
+  border: 1px solid var(--secondary_color);
+}
+
+.footer__container {
+  width: var(--container_width);
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: flex;
+}
+
+.footer_contact_section,
+.footer_service_section {
+  border-right: 2px dotted var(--backup_color);
+  flex-basis: 30%;
+}
+
+.footer_contact_section h4 {
+  color: white;
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer_contact_section h5 {
+  color: white;
+  font-size: 1.6rem;
+  padding-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer_service_section {
+  padding: 0 1.2rem;
+}
+
+.footer_service_section h4 {
+  color: white;
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer_service_section p a {
+  color: white;
+  font-size: 1.6rem;
+  padding-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.subscription__section {
+  padding: 0 1.2rem;
+  flex-basis: 35%;
+}
+
+.subscription__section h4 {
+  color: white;
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subscription__section p {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.form-control {
+  font-size: 1.5rem;
+}
+
+.subscription__section button {
+  font-size: 1.6rem;
+}
+
+.copyright__text {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+/*************MEDIA QUERIES*****************/
+@media (max-width: 1100px) {
+  .aboutUs_item_1_photo,
+  .aboutUs_item_2_photo,
+  .aboutUs_item_3_photo {
+    width: 48rem;
+    height: 35rem;
+  }
+
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 3rem;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .logo {
+    margin-top: 0.1rem;
+  }
+  .navlist {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 87%;
+    flex-direction: column;
+    z-index: 1500;
+    align-items: center;
+    padding: 2rem 0 1.5rem 0;
+    display: none;
+    overflow-y: scroll;
+    background-color: var(--backup_color);
+  }
+
+  .navlist > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 10rem;
+    width: 15rem;
+  }
+
+  .navlist li a {
+    font-size: 2.5rem;
+    padding: 5px;
+  }
+
+  .sub__menu {
+    display: none;
+  }
+
+  .sub__menu > li > a {
+    display: none;
+  }
+
+  .sub__menu::before {
+    display: none;
+  }
+
+  .service__icon {
+    display: none;
+  }
+
+  .call__action {
+    line-height: initial;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .call__action li {
+    padding: 1rem;
+  }
+
+  .call__action a {
+    width: 15rem;
+    font-size: 2.3rem;
+  }
+
+  .menu__icons {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+  nav.active .close {
+    display: block;
+  }
+
+  nav.active .hamburger {
+    display: none;
+  }
+
+  nav.active .navlist {
+    display: flex;
+  }
+
+  .about_us_container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .aboutUs_item_1,
+  .aboutUs_item_2,
+  .aboutUs_item_3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 6rem;
+  }
+
+  .aboutUs_item_1_photo,
+  .aboutUs_item_2_photo,
+  .aboutUs_item_3_photo {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 3rem;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .aboutUs__container {
+    padding-bottom: 3rem;
+  }
+
+  .aboutUs_item_1,
+  .aboutUs_item_2,
+  .aboutUs_item_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .aboutUs_item_1,
+  .aboutUs_item_2 {
+    margin-bottom: -2rem;
+  }
+
+  .aboutUs_item_1_photo,
+  .aboutUs_item_2_photo,
+  .aboutUs_item_3_photo {
+    width: 90%;
+    margin-bottom: 2.5rem;
+  }
+
+  .aboutUs_item_1_text,
+  .aboutUs_item_2_text,
+  .aboutUs_item_3_text {
+    width: 90%;
+  }
+
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+    text-align: justify;
+  }
+
+  .footer__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .footer_contact_section,
+  .footer_service_section {
+    flex-basis: 35%;
+  }
+
+  .footer_contact_section h4 {
+    font-size: 2.6rem;
+  }
+
+  .footer_contact_section h5 {
+    font-size: 1.6rem;
+  }
+
+  .footer_service_section {
+    padding: 0 0.6rem;
+  }
+
+  .footer_service_section h4 {
+    font-size: 2.6rem;
+  }
+
+  .footer_service_section p a {
+    font-size: 1.3rem;
+  }
+
+  .subscription__section {
+    flex-basis: 40%;
+  }
+
+  .subscription__section h4 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_contact_section h4 {
+    font-size: 2.1rem;
+  }
+
+  .footer_contact_section h5 {
+    font-size: 1.4rem;
+  }
+
+  .footer_service_section h4 {
+    font-size: 2.1rem;
+  }
+
+  .footer_service_section p a {
+    font-size: 1.4rem;
+  }
+
+  .subscription__section h4 {
+    font-size: 2.1rem;
+  }
+
+  .subscription__section p {
+    font-size: 1.4rem;
+  }
+
+  .subscription__section button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 3.5rem;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 2rem;
+    line-height: 4.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutUs__container {
+    padding-top: 5rem;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .footer__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_contact_section,
+  .footer_service_section {
+    border-right: none;
+    border-bottom: 2px dotted var(--backup_color);
+    width: 100%;
+  }
+
+  .footer_contact_section h4 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer_contact_section h5 {
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer_service_section h4 {
+    font-size: 4rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .footer_service_section p a {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .subscription__section {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .subscription__section h4 {
+    font-size: 4rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .subscription__section p {
+    font-size: 1.9rem;
+  }
+
+  .form-control {
+    font-size: 1.6rem;
+  }
+
+  .subscription__section button {
+    font-size: 1.9rem;
+  }
+
+  .copyright__text {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 2.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutUs_item_1_text h3,
+  .aboutUs_item_2_text h3,
+  .aboutUs_item_3_text h3 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .aboutUs_item_1_text p,
+  .aboutUs_item_2_text p,
+  .aboutUs_item_3_text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mediaQueries.css" />
+
+    <title>WeMuuve</title>
+  </head>
+  <body>
+    <!--**********HEADER SECTION STARTS**********-->
+    <header>
+      <div class="menu">
+        <div class="menu__container">
+          <nav>
+            <div class="menu__icons">
+              <ion-icon class="hamburger" name="menu" size="large"></ion-icon>
+              <ion-icon class="close" name="close" size="large"></ion-icon>
+            </div>
+            <a href="index.html" class="logo">
+              <p>we<span class="logo__add">Muuve</span></p>
+            </a>
+            <ul class="navlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="assets/about.html">About Us</a></li>
+              <li>
+                <a href="assets/services.html" class="services__nav"
+                  >Services<ion-icon
+                    class="service__icon"
+                    name="arrow-dropdown"
+                  ></ion-icon
+                ></a>
+                <ul class="sub__menu">
+                  <li><a href="assets/servicesRoute/homeMove.html">Home moves</a></li>
+                  <li><a href="assets/servicesRoute/officeMove.html">Office/Business moves</a></li>
+                  <li><a href="assets/servicesRoute/schoolMove.html">Student moves</a></li>
+                  <li><a href="assets/servicesRoute/secureStorage.html">Secure Storage</a></li>
+                  <li><a href="assets/servicesRoute/storeDelivery.html">Store delivery</a></li>
+                  <li><a href="#">Cleaning service</a></li>
+                </ul>
+              </li>
+              <li><a href="assets/gallery.html">Gallery</a></li>
+              <div class="call__action">
+                <li>
+                  <a href="tel:+2348179133592"
+                    ><ion-icon class="phone" name="call"></ion-icon>Call us</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main class="hero__section">
+        <div class="hero_text_container">
+          <div class="hero__text">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              Let us help you move with ease.
+            </h1>
+
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              Whether you are moving down the street, to a new state, to a new
+              house or business location, we are here to help you move with
+              ease.
+            </h3>
+          </div>
+          <a href="#aboutUs"><div class="scroll_down_action"></div></a>
+        </div>
+      </main>
+
+      <video autoplay loop muted class="bg__video" alt="People_moving_couch">
+        <source src="assets/videos/moving_couch.mp4" />
+      </video>
+    </header>
+    <!--**********HEADER SECTION ENDS**********-->
+
+    <!--**********ABOUT US SECTION STARTS**********-->
+    <main id="aboutUs">
+      <div class="aboutUs__container">
+        <h2>About us</h2>
+        <!--**********FIRST ITEM STARTS**********-->
+        <section
+          class="aboutUs_item_1"
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-duration="800"
+        >
+          <div class="aboutUs_item_1_photo">
+            <img src="assets/images/loading_truck.jpg" alt="loading_truck" />
+          </div>
+
+          <div class="aboutUs_item_1_text">
+            <h3>We work round the clock</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur hic quo enim alias dolor soluta esse, illo nesciunt,
+              eligendi, recusandae sequi reprehenderit? Maiores eligendi commodi
+              dolore sit expedita, amet consequatur voluptas placeat sint
+              voluptatum magni quidem ut velit ex a.
+            </p>
+          </div>
+        </section>
+        <!--**********FIRST ITEM ENDS**********-->
+
+        <!--**********SECOND ITEM STARTS**********-->
+        <section
+          class="aboutUs_item_2"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-duration="800"
+        >
+          <div class="aboutUs_item_2_photo">
+            <img
+              src="assets/images/carrying_box.jpg"
+              alt="Two people carrying a
+            box"
+            />
+          </div>
+
+          <div class="aboutUs_item_2_text">
+            <h3>We are very thorough</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur hic quo enim alias dolor soluta esse, illo nesciunt,
+              eligendi, recusandae sequi reprehenderit? Maiores eligendi commodi
+              dolore sit expedita, amet consequatur voluptas placeat sint
+              voluptatum magni quidem ut velit ex a.
+            </p>
+          </div>
+        </section>
+        <!--**********SECOND ITEM ENDS**********-->
+
+        <!--**********THIRD ITEM STARTS**********-->
+        <section
+          class="aboutUs_item_3"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-duration="800"
+        >
+          <div class="aboutUs_item_3_photo">
+            <img src="assets/images/moving_truck.jpg" alt="moving truck" />
+          </div>
+
+          <div class="aboutUs_item_3_text">
+            <h3>We are always on time</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur hic quo enim alias dolor soluta esse, illo nesciunt,
+              eligendi, recusandae sequi reprehenderit? Maiores eligendi commodi
+              dolore sit expedita, amet consequatur voluptas placeat sint
+              voluptatum magni quidem ut velit ex a.
+            </p>
+          </div>
+        </section>
+        <!--**********THIRD ITEM ENDS**********-->
+      </div>
+    </main>
+    <!--**********ABOUT US SECTION ENDS**********-->
+
+    <!--**********SERVICES SECTION STARTS**********-->
+    <article id="services">
+      <div class="services__container">
+        <h2>Services</h2>
+        <!--**********ITEM 1 STARTS**********-->
+        <div class="service__items">
+          <section
+            class="service_item_1"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/homeMove.html">Home moves</a></p>
+            <img src="assets/images/png/home_move.png" />
+          </section>
+          <!--**********ITEM 1 ENDS**********-->
+
+          <!--**********ITEM 2 STARTS**********-->
+          <section
+            class="service_item_2"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/officeMove.html">Office/Business moves</a></p>
+            <img src="assets/images/png/office_move.png" />
+          </section>
+          <!--**********ITEM 2 ENDS**********-->
+
+          <!--**********ITEM 3 STARTS**********-->
+          <section
+            class="service_item_3"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/schoolMove.html">School moves</a></p>
+            <img src="assets/images/png/school_move.png" />
+          </section>
+          <!--**********ITEM 3 ENDS**********-->
+
+          <!--**********ITEM 4 STARTS**********-->
+          <section
+            class="service_item_4"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/secureStorage.html">Secure Storage</a></p>
+            <img src="assets/images/png/secure_storage.png" />
+          </section>
+          <!--**********ITEM 4 ENDS**********-->
+
+          <!--**********ITEM 5 STARTS**********-->
+          <section
+            class="service_item_5"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/storeDelivery.html">Store delivery</a></p>
+            <img src="assets/images/png/store_delivery.png" />
+          </section>
+          <!--**********ITEM 5 ENDS**********-->
+
+          <!--**********ITEM 6 STARTS**********-->
+          <section
+            class="service_item_6"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="800"
+          >
+            <p><a href="assets/servicesRoute/cleaningService.html">Cleaning services</a></p>
+            <img src="assets/images/png/cleaning_service.png" />
+          </section>
+          <!--**********ITEM 6 ENDS**********-->
+        </div>
+      </div>
+    </article>
+    <!--**********SERVICES SECTION ENDS**********-->
+
+    <!--**********GALLERY SECTION STARTS**********-->
+    <article id="gallery">
+      <div class="gallery__container">
+        <h2>Gallery</h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <img
+                src="assets/images/gallery_photo_1.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <img
+                src="assets/images/gallery_photo_5.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <img
+                src="assets/images/gallery_photo_3.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="6000">
+              <img
+                src="assets/images/gallery_photo_4.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="6000">
+              <img
+                src="assets/images/gallery_photo_2.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <!--**********GALLERY SECTION ENDS***********-->
+
+    <!--**********REVIEW SECTION STARTS**********-->
+    <article id="review">
+      <div class="review__container">
+        <h2>Reviews</h2>
+
+        <!--**********REVIEW ITEM 1 STARTS**********-->
+        <section class="review_item_1">
+          <div class="review_item_1_img">
+            <img
+              src="assets/images/client_1.jpg"
+              alt="client_1_photo"
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="400"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div
+            class="review_item_1_text"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="600"
+            data-aos-easing="ease"
+            data-aos-once="true"
+            data-aos-duration="900"
+          >
+            <p>
+              weMuuve made moving from my old apartment to the new one hassle
+              free, I would 100 percent recommend their services to anyone.
+            </p>
+            <cite>-John</cite>
+            <div class="star__icons">
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+            </div>
+          </div>
+        </section>
+        <!--**********REVIEW ITEM 1 ENDS***********-->
+
+        <!--**********REVIEW ITEM 2 STARTS**********-->
+        <section class="review_item_2">
+          <div class="review_item_2_img">
+            <img
+              src="assets/images/client_2.jpg"
+              alt="client_2_photo"
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="400"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div
+            class="review_item_2_text"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="500"
+            data-aos-easing="ease"
+            data-aos-once="true"
+            data-aos-duration="900"
+          >
+            <p>
+              A friend of mine recommended weMuuve to help with moving from my
+              previous college dorm to a new one, and to be honest, their
+              services are very affordable.
+            </p>
+            <cite>-Rosie</cite>
+            <div class="star__icons">
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star-half" size="large"></ion-icon>
+            </div>
+          </div>
+        </section>
+        <!--**********REVIEW ITEM 2 ENDS************-->
+
+        <!--**********REVIEW ITEM 3 STARTS**********-->
+        <section class="review_item_3">
+          <div class="review_item_3_img">
+            <img
+              src="assets/images/client_3.jpg"
+              alt="client_3_photo"
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="400"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div
+            class="review_item_3_text"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="500"
+            data-aos-easing="ease"
+            data-aos-once="true"
+            data-aos-duration="900"
+          >
+            <p>
+              It's insane how quickly they responded when I booked them to help
+              me move my business equipments from one state to another. They
+              definitely are the best in the business.
+            </p>
+            <cite>-Damian</cite>
+            <div class="star__icons">
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+              <ion-icon name="star" size="large"></ion-icon>
+            </div>
+          </div>
+        </section>
+        <!--**********REVIEW ITEM 3 ENDS************-->
+      </div>
+    </article>
+    <!--**********REVIEW SECTION ENDS************-->
+
+    <!--**********MODAL FORM SECTION STARTS***********-->
+    <article id="modal__form">
+      <div class="modal_form_container">
+        <div class="modal__text">
+          <h3>Need our services?</h3>
+        </div>
+
+        <!--**********MODAL STARTS**************-->
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          id="book_us_btn"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Book us
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Enter details
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Name</label>
+                    <input type="email" class="form-control" id="inputEmail4" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" scrollable class="form-select">
+                      <option selected>Lagos</option>
+                      <option>Edo</option>
+                      <option>Abuja</option>
+                      <option>Enugu</option>
+                      <option>Calabar</option>
+                      <option>Imo</option>
+                      <option>Ogun</option>
+                      <option>Anambra</option>
+                      <option>Benue</option>
+                      <option>Kaduna</option>
+                      <option>Kano</option>
+                      <option>Port-harcourt</option>
+                      <option>Abia</option>
+                      <option>Adamawa</option>
+                      <option>Awka Ibom</option>
+                      <option>Bauchi</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label"
+                      >Pickup Address</label
+                    >
+                    <input type="text" class="form-control" id="inputAddress" />
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label"
+                      >Dropoff Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress2"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="gridCheck"
+                      />
+                      <label class="form-check-label" for="gridCheck">
+                        Agree to terms and conditions
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--**********MODAL ENDS***************-->
+      </div>
+    </article>
+    <!--**********MODAL FORM SECTION ENDS*************--
+>
+    <!--**********FAQS SECTION STARTS***********-->
+    <section id="faqs">
+      <main class="faqs__container">
+        <h2>FAQS</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                How do you charge for your services?
+              </button>
+            </h3>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam error facere provident recusandae deleniti, dolorum
+                nemo sit ipsa laudantium rem voluptas, maiores tenetur
+                architecto debitis porro suscipit assumenda cum corporis!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                How long does it take you to get to pickup address?
+              </button>
+            </h3>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                debitis animi amet ullam! Modi recusandae laboriosam magnam.
+                Dolorum, omnis quis quia libero quos a dignissimos aut.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                What happens if my items are damaged or missing during dropoff?
+              </button>
+            </h3>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                pariatur impedit sapiente molestias accusantium beatae? Vitae
+                sit neque at doloremque animi commodi accusantium nesciunt nulla
+                nisi molestias, temporibus possimus necessitatibus assumenda,
+                veritatis, eaque tempora ullam!
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!--**********FAQS SECTION ENDS*************-->
+
+    <!--**********FOOTER SECTION STARTS**********-->
+    <section id="footer">
+      <main class="footer__container">
+        <div class="footer_contact_section">
+          <h4>Contact</h4>
+          <h5><ion-icon name="pin"></ion-icon> 034 Somewhere in Nigeria.</h5>
+          <h5><ion-icon name="pin"></ion-icon> 98 Somewhere in Nigeria.</h5>
+          <h5><ion-icon name="mail"></ion-icon>wemuuve@gmail.com</h5>
+          <h5><ion-icon name="phone-portrait"></ion-icon>+2347033309021</h5>
+        </div>
+
+        <div class="footer_service_section">
+          <h4>Our services</h4>
+          <p><a href="assets/servicesRoute/homeMove.html">Home moves</a></p>
+          <p><a href="assets/servicesRoute/officeMove.html">Office moves</a></p>
+          <p><a href="assets/servicesRoute/schoolMove.html">Student moves</a></p>
+          <p><a href="assets/servicesRoute/secureStorage.html">Secure storage</a></p>
+          <p><a href="assets/servicesRoute/storeDelivery.html">Store delivery</a></p>
+          <p><a href="assets/servicesRoute/cleaningService.html">Cleaning services</a></p>
+        </div>
+
+        <div class="subscription__section">
+          <h4>Subscribe</h4>
+          <p>
+            Want to be notified when we have tips or offers. Just sign up and
+            we'll send you a notification by email.
+          </p>
+          <div class="subscription__form">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <p class="copyright__text">&copy;Built by Kaybangz</p>
+    </section>
+    <!--**********FOOTER SECTION ENDS************-->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/main.js" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
