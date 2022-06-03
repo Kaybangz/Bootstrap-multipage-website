@@ -270,26 +270,26 @@ nav {
 .aboutUs__container {
   width: var(--container_width);
   margin: 0 auto;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 
 .aboutUs__container h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--secondary_color);
   margin-left: 2.5rem;
   display: flex;
   position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   letter-spacing: 0.8rem;
 }
 
 .aboutUs__container h2::after {
   content: "";
   position: absolute;
-  top: 6.5rem;
+  top: 3.8rem;
   left: -1rem;
   width: 17rem;
   height: 6.5rem;
@@ -373,22 +373,22 @@ nav {
 }
 
 .services__container h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--secondary_color);
   margin-left: 2.5rem;
   display: flex;
   position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   letter-spacing: 0.8rem;
 }
 
 .services__container h2::after {
   content: "";
   position: absolute;
-  top: 6.5rem;
+  top: 3.8rem;
   left: -1rem;
   width: 17rem;
   height: 6.5rem;
@@ -458,22 +458,22 @@ nav {
 }
 
 .gallery__container h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--secondary_color);
   margin-left: 2.5rem;
   display: flex;
   position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   letter-spacing: 0.8rem;
 }
 
 .gallery__container h2::after {
   content: "";
   position: absolute;
-  top: 6.5rem;
+  top: 1.8rem;
   left: -1rem;
   width: 17rem;
   height: 6.5rem;
@@ -511,22 +511,22 @@ nav {
 }
 
 .review__container h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--secondary_color);
   margin-left: 2.5rem;
   display: flex;
   position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   letter-spacing: 0.8rem;
 }
 
 .review__container h2::after {
   content: "";
   position: absolute;
-  top: 6.5rem;
+  top: 3.3rem;
   left: -1rem;
   width: 17rem;
   height: 6.5rem;
@@ -562,8 +562,8 @@ nav {
 .review_item_1_img img,
 .review_item_2_img img,
 .review_item_3_img img {
-  width: 24rem;
-  height: 24rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 100%;
 }
 
